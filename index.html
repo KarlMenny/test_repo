@@ -1,56 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UI Компоненти</title>
+    <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    
-    <select>
-        <option value="1">27</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="6">999</option>
-        <option value="6">999</option>
-        <option value="6">9992</option>
-		<option value="6">еуе</option>
-		<option value="6">777</option>
-		<option value="6">888</option>
-		<option value="6">xxx</option>
-		<option value="6">zzz</option>
-        <option value="7">999</option>
-        <option value="8">999</option>
-        <option value="9">999</option>
-        <option value="10">999</option>
-    </select>
-    
-    <div>2</div>
-    <a href="#">3</a>
-    <div>4</div>
-    <div id="5">5</div>
-    <div>6</div>
-    <a href="#">7</a>
-    <div>8</div>
-    <div>9</div>
-    <div>10</div>
-    <div>11</div>
-    <div>14</div>
-    <div>17</div>
-    <div>18</div>
-     <div>19</div>
-     <div>20</div>
-    <div>21</div>
-    <div>22</div>
-       <div>23</div>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script>
-        console.log($('select option:selected').val());
-    </script>
+    <div id="PageContent" class="redesign-components">
+        <main class="main remove-safe-gutters">
+            <div class="main__wrapper">
+                <div class="custom-block custom-block_theme_white container-1770">
+                    <div class="custom-block__title">Кнопки фільтрів</div>
+                    <button class="btn btn_h_36 btn_color_light-blue" type="button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12H5M12 5V19" stroke="#295FAF" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span>№ закупівлі</span>
+                    </button>
+                    <button class="btn btn_h_36 btn_color_light-blue" type="button" disabled>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12H5M12 5V19" stroke="#295FAF" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span>№ закупівлі</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
+
 </html>
