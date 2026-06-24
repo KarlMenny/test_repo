@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --grey-color: #F2F2F2;
@@ -296,5 +296,71 @@ a.link-blue-light:hover {
 .btn_color_light-blue:hover {
     background-color: #E8F2FF;
 }
+
+.btn_color_light-green {
+    background-color: var(--green-light-color-2);
+    color: var(--success-color-2);
+}
+
+.btn_color_light-green:hover {
+    background-color: var(--green-color-4);
+}
+
+.btn_color_light-red {
+    background-color: var(--red-light-color);
+    color: var(--danger-color);
+}
+
+.btn_color_light-red:hover {
+    background-color: #F9D9D9;
+}
+
+.btn-danger {
+    color: var(--white-color);
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+}
+
+.btn-danger:hover {
+    color: var(--white-color);
+    background-color: var(--danger-color-3);
+    border-color: var(--danger-color-3);
+}
+
+.btn-primary {
+    color: var(--white-color);
+    background-color: var(--blue-color-2);
+    border-color: var(--blue-color-2);
+}
+
+.btn-primary:hover {
+    color: var(--white-color);
+    background-color: var(--blue-light-color-3);
+}
+
+.btn-info {
+    color: var(--white-color);
+    background-color: var(--info-color);
+    border-color: var(--info-color);
+}
+
+.btn-info:hover {
+    color: var(--white-color);
+    background-color: var(--info-color-2);
+    border-color: var(--info-color-2);
+}
+
+.btn-success {
+    color: #fff;
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: var(--green-light-color-4);
+    border-color: var(--green-light-color-4);
+}
+
 
 /* CUSTOM BLOCKS - end */

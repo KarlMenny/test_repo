@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI Компоненти</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="redesign-components.css">
 </head>
 
 <body>
@@ -13,21 +14,53 @@
         <main class="main remove-safe-gutters">
             <div class="main__wrapper">
                 <div class="custom-block custom-block_theme_white container-1770">
-                    <div class="custom-block__title">Кнопки фільтрів</div>
-                    <button class="btn btn_h_36 btn_color_light-blue" type="button">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 12H5M12 5V19" stroke="#295FAF" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                        <span>№ закупівлі</span>
-                    </button>
-                    <button class="btn btn_h_36 btn_color_light-blue" type="button" disabled>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 12H5M12 5V19" stroke="#295FAF" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                        <span>№ закупівлі</span>
-                    </button>
+                    <div class="custom-block__title">Кнопки (btn_h_36)</div>
+                    <div class="redesign-components__btns">
+                        <button class="btn btn_h_36 btn_color_light-blue">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12H5M12 5V19" stroke="#295FAF" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>№ закупівлі</span>
+                        </button>
+                        <button class="btn btn_h_36 btn_color_light-blue" disabled>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12H5M12 5V19" stroke="#295FAF" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>№ закупівлі</span>
+                        </button>
+                        <button class="btn btn_color_light-green btn_h_36">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 15V3M12 15L17 10M12 15L7 10M3 15V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V15"
+                                    stroke="#28A447" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>Завантажити в Excel</span>
+                        </button>
+                        <button class="btn btn_h_36 btn_color_light-red">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 6L6 18M6 6L18 18" stroke="#E65151" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>Очистити фільтри</span>
+                        </button>
+                        <button class="btn btn_h_36 btn-danger">Видалити</button>
+                        <button class="btn btn_h_36 btn-primary">Зупинити</button>
+                        <button class="btn btn_h_36 btn-info">Інформація</button>
+                        <button class="btn btn_h_36 btn-success">Зберегти</button>
+                    </div>
+                    <div class="custom-block__title">Кнопки</div>
+                    <div class="redesign-components__btns">
+                        <button class="btn btn-danger">Видалити</button>
+                        <button class="btn btn-primary">Зупинити</button>
+                        <button class="btn btn-info">Інформація</button>
+                        <button class="btn btn-success">Зберегти</button>
+                    </div>
                 </div>
             </div>
         </main>
