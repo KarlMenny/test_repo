@@ -6,3 +6,22 @@
     margin-bottom: 32px;
 }
 
+.redesign-components .cheked-items {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.redesign-components__switches {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.redesign-components__radio-group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
