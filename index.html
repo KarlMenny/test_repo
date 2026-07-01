@@ -69,6 +69,18 @@
                         <button class="btn btn-info">Інформація</button>
                         <button class="btn btn-success">Зберегти</button>
                         <button class="btn btn_color_white">Реєстрація</button>
+                        <a href="#" role="button" class="btn btn-outline-primary btn_h_36">
+                            <svg class="btn__img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 10C9.79086 10 8 8.20914 8 6C8 3.79086 9.79086 2 12 2C14.2091 2 16 3.79086 16 6C16 8.20914 14.2091 10 12 10Z"
+                                    fill="#295FAF" />
+                                <path
+                                    d="M4 17.5C4 19.985 4 22 12 22C20 22 20 19.985 20 17.5C20 15.015 16.418 13 12 13C7.582 13 4 15.015 4 17.5Z"
+                                    fill="#295FAF" />
+                            </svg>
+                            <span>Увійти в кабінет</span>
+                        </a>
                     </div>
                     <div class="custom-block__title">Чіпи</div>
                     <div class="cheked-items">
@@ -147,6 +159,170 @@
                                 <div value="4">з 08:00 до 10:00</div>
                                 <div value="5">з 10:00 до 12:00</div>
                                 <div value="6">з 12:00 до 14:00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-block__title">Фільтри</div>
+                    <div class="redesign-components__filters">
+                        <div class="own-igroup">
+                            <div class="own-igroup__content">
+                                <div class="own-igroup__prepend">
+                                    <span class="own-igroup__text text-truncate">№ закупівлі:</span>
+                                </div>
+                                <div class="own-igroup__prepend">
+                                    <span class="own-igroup__text text-truncate">UA-</span>
+                                </div>
+                                <input type="text" class="own-igroup__input">
+                            </div>
+                            <div class="own-igroup__close-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6L6 18M6 6L18 18" stroke="#E65151" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="own-igroup">
+                            <div class="own-igroup__content">
+                                <div class="own-igroup__prepend">
+                                    <span class="own-igroup__text">Процедура:</span>
+                                </div>
+                                <div class="own-select own-igroup__select">
+                                    <div class="own-select__selected" data-selected="1" tabindex="0">Процедура 1</div>
+                                    <div class="own-select__items">
+                                        <div value="1">Процедура 1</div>
+                                        <div value="2">Процедура 2</div>
+                                        <div value="3">Процедура 3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="own-igroup__close-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6L6 18M6 6L18 18" stroke="#E65151" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="own-igroup">
+                            <div class="own-igroup__content own-igroup__el-valueAmount">
+                                <div class="own-igroup__prepend">
+                                    <span class="own-igroup__text">Бюджет:</span>
+                                </div>
+                                <div class="own-igroup__inputs-group">
+                                    <input type="number" class="own-igroup__input" placeholder="від" min="0">
+                                    <input type="number" class="own-igroup__input own-igroup__l-separator"
+                                        placeholder="до" min="0">
+                                </div>
+                            </div>
+                            <div class="own-igroup__close-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6L6 18M6 6L18 18" stroke="#E65151" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="own-igroup">
+                            <div class="own-igroup__content own-igroup__el-period">
+                                <div class="own-igroup__wrapper">
+                                    <div class="own-igroup__prepend">
+                                        <span class="own-igroup__text">Дата:</span>
+                                    </div>
+                                    <div class="own-select own-igroup__select">
+                                        <div class="own-select__selected" data-selected="1" tabindex="0">Дата 1</div>
+                                        <div class="own-select__items">
+                                            <div value="1">Дата 1</div>
+                                            <div value="2">Дата 2</div>
+                                            <div value="3">Дата 3</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="own-igroup__inputs-group">
+                                    <div class="own-igroup__input-with-icon own-igroup__l-separator">
+                                        <input type="text" class="own-igroup__input own-igroup__input_type_date"
+                                            placeholder="від">
+                                        <svg class="own-igroup__input-icon" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 2V6M16 2V6M3 10H21M5 4H19C20.1046 4 21 4.89543 21 6V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V6C3 4.89543 3.89543 4 5 4Z"
+                                                stroke="#1D437C" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="own-igroup__input-with-icon own-igroup__l-separator">
+                                        <input type="text" class="own-igroup__input own-igroup__input_type_date"
+                                            placeholder="до">
+                                        <svg class="own-igroup__input-icon" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 2V6M16 2V6M3 10H21M5 4H19C20.1046 4 21 4.89543 21 6V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V6C3 4.89543 3.89543 4 5 4Z"
+                                                stroke="#1D437C" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="own-igroup__close-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6L6 18M6 6L18 18" stroke="#E65151" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="own-igroup">
+                            <div
+                                class="own-igroup__content own-igroup__el-period own-igroup__el-period_without-select">
+                                <div class="own-igroup__prepend">
+                                    <span class="own-igroup__text">Дата подання пропозиції:</span>
+                                </div>
+                                <div class="own-igroup__inputs-group">
+                                    <div class="own-igroup__input-with-icon">
+                                        <input type="text" class="own-igroup__input own-igroup__input_type_date"
+                                            placeholder="від">
+                                        <svg class="own-igroup__input-icon" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 2V6M16 2V6M3 10H21M5 4H19C20.1046 4 21 4.89543 21 6V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V6C3 4.89543 3.89543 4 5 4Z"
+                                                stroke="#1D437C" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="own-igroup__input-with-icon own-igroup__l-separator">
+                                        <input type="text" class="own-igroup__input own-igroup__input_type_date"
+                                            placeholder="до">
+                                        <svg class="own-igroup__input-icon" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 2V6M16 2V6M3 10H21M5 4H19C20.1046 4 21 4.89543 21 6V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V6C3 4.89543 3.89543 4 5 4Z"
+                                                stroke="#1D437C" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="own-igroup__close-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6L6 18M6 6L18 18" stroke="#E65151" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="own-igroup">
+                            <div class="own-igroup__content">
+                                <div class="own-igroup__prepend">
+                                    <span class="own-igroup__text">Замовник:</span>
+                                </div>
+                                <input type="text" class="own-igroup__input">
+                            </div>
+                            <div class="own-igroup__close-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6L6 18M6 6L18 18" stroke="#E65151" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
                             </div>
                         </div>
                     </div>

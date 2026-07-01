@@ -36,5 +36,13 @@
 .redesign-components__own-select {
     display: flex;
     justify-content: center;
+    margin-bottom: 32px;
+}
+
+.redesign-components__filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
 }
 

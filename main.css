@@ -151,6 +151,12 @@ a.link-blue-light:hover {
     cursor: pointer;
 }
 
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 /* COMMON end */
 
 /* CUSTOM BLOCKS - start */
@@ -304,6 +310,42 @@ a.link-blue-light:hover {
 
 .btn_color_white:hover {
     background-color: var(--blue-light-color-5);
+}
+
+a.btn {
+    text-decoration: none;
+}
+
+.btn-outline-primary {
+    color: #295eaf;
+    background-color: transparent;
+    border: 1px solid var(--blue-color);
+    border-color: #295eaf;
+}
+
+.btn-outline-primary:hover .btn__img path,
+.btn-outline-primary .btn__img path {
+    transition: .15s ease-in-out;
+}
+
+.btn-outline-primary.active .btn__img path,
+.btn-outline-primary:hover .btn__img path {
+    fill: var(--white-color);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: var(--blue-color-2);
+    border-color: var(--blue-color-2);
+}
+
+.btn-outline-primary.focus,
+.btn-outline-primary:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none;
 }
 
 .btn_color_light-green {
@@ -685,7 +727,6 @@ a.carte {
    ======================== */
 
 .own-select {
-    line-height: 20px;
     position: relative;
     min-width: 190px;
     user-select: none;
@@ -799,6 +840,119 @@ a.carte {
     bottom: 100%;
     margin-top: 0;
     margin-bottom: 4px;
+}
+
+/* ========================
+   ФІЛЬТРИ
+   ======================== */
+
+.own-igroup {
+    display: flex;
+    align-items: center;
+}
+
+.own-igroup__content {
+    min-height: 37px;
+    display: flex;
+}
+
+.own-igroup__prepend {
+    border: 1px solid var(--blue-color);
+    border-radius: 8px 0 0 8px;
+    border-right: 0;
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.own-igroup__prepend:nth-child(2) {
+    border-radius: 0;
+    border-left: 0;
+}
+
+.own-igroup__wrapper,
+.own-igroup__inputs-group {
+    display: flex;
+}
+
+.own-igroup__input {
+    border: 1px solid var(--blue-color);
+    border-left: 0;
+    border-radius: 0 8px 8px 0;
+    padding: 7px 10px;
+    color: var(--blue-color);
+}
+
+.own-igroup__input_type_date {
+    width: 100%;
+    max-width: 135px;
+    min-height: 22px;
+}
+
+.own-igroup__input-with-icon {
+    position: relative;
+}
+
+.own-igroup__input-with-icon .own-igroup__input {
+    padding-right: 44px;
+}
+
+.own-igroup__input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    pointer-events: none;
+}
+
+.own-igroup__l-separator {
+    border-left: 1px solid var(--blue-color);
+}
+
+.own-igroup .own-igroup__select {
+    min-width: initial;
+    border: 1px solid var(--blue-color);
+    border-radius: 0 8px 8px 0;
+    border-left: 0;
+}
+
+.own-igroup__select .own-select__selected {
+    border: 0;
+    padding: 7px 44px 7px 10px;
+    border-radius: 8px;
+    min-height: 22px;
+}
+
+.own-igroup__select .own-select__items {
+    right: initial;
+}
+
+.own-select--drop-up .own-select__items {
+    top: auto;
+    bottom: 100%;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.own-igroup__prepend {
+    background-color: var(--blue-light-color);
+}
+
+.own-igroup__close-btn {
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform .2s ease;
+}
+
+.own-igroup__close-btn:hover {
+    transform: scale(0.9);
+}
+
+.own-igroup__el-valueAmount .own-igroup__input:first-child,
+.own-igroup__el-period .own-igroup__input-with-icon:first-child .own-igroup__input_type_date,
+.own-igroup__el-period .own-igroup__select {
+    border-radius: 0;
+    border-right: 0;
 }
 
 /* CUSTOM BLOCKS - end */
