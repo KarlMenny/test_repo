@@ -25,3 +25,16 @@
     gap: 16px;
 }
 
+.redesign-components__cartes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.redesign-components__own-select {
+    display: flex;
+    justify-content: center;
+}
+
