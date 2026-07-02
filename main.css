@@ -1127,6 +1127,178 @@ a.carte {
     color: var(--white-color);
 }
 
+/* ========================
+   ДОКУМЕНТИ
+   ======================== */
+
+.documents-block__head-row {
+    height: 28px;
+}
+
+.documents-block__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.documents-card {
+    padding: 12px 16px;
+    border: 1px solid var(--blue-light-color-4);
+    border-radius: 12px;
+    background: var(--white-color);
+}
+
+.documents-card_old {
+    padding: 8px 0;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid var(--blue-light-color-4);
+}
+
+.documents-card_old .documents-card__item-title {
+    display: none;
+}
+
+.documents-card_opened-prev .documents-card_old,
+.documents-card_opened-prev {
+    background: var(--blue-light-color-5);
+}
+
+.documents-card_old:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.documents-card__wrapper {
+    display: grid;
+    grid-template-columns: minmax(80px, 661px) repeat(2, minmax(0, 305px)) minmax(168px, auto);
+}
+
+.documents-card__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.documents-card__item:nth-child(2) {
+    padding-right: 16px;
+}
+
+.documents-card__name-content {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.documents-card__name {
+    padding-right: 16px;
+    gap: 16px;
+}
+
+.documents-card__name-wrapper {
+    max-width: calc(100% - 55px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.documents-card__date {
+    font-size: 12px;
+    color: var(--grey-light-color);
+}
+
+.documents-card__actions {
+    gap: 8px;
+}
+
+.documents-card__item-title {
+    display: none;
+}
+
+.documents-card:first-child:not(.documents-card_old)>.documents-card__wrapper .documents-card__item-title {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--blue-color);
+    position: absolute;
+    top: -38px;
+    left: 0;
+}
+
+.documents-card:first-child:not(.documents-card_old)>.documents-card__wrapper .documents-card__name .documents-card__item-title {
+    left: 60px;
+}
+
+.documents-card__prev-docs {
+    margin-top: 8px;
+}
+
+.prev-docs__toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--blue-light-color-3);
+    cursor: pointer;
+}
+
+.prev-docs__toggle-icon {
+    width: 10px;
+    transition: transform 0.3s ease;
+}
+
+.prev-docs__toggle-icon_rotated {
+    transform: rotate(180deg);
+}
+
+.prev-docs__list {
+    display: none;
+}
+
+.action {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+
+.action:focus {
+    outline: 2px solid #000;
+    outline-offset: 1px;
+}
+
+.action_view {
+    background-color: var(--blue-light-color-5);
+}
+
+.action_download {
+    background-color: var(--blue-light-color-5);
+}
+
+.action_download:hover {
+    background-color: var(--blue-light-color);
+}
+
+.action_update {
+    background-color: var(--green-light-color);
+}
+
+.action_update:hover {
+    background-color: var(--green-light-color-2);
+}
+
+.action_delete {
+    background-color: var(--red-light-color);
+}
+
+.action_delete:hover {
+    background-color: var(--danger-color-4);
+}
+
 
 
 /* CUSTOM BLOCKS - end */

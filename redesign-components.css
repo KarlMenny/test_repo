@@ -56,9 +56,15 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
+    margin-bottom: 32px;
 }
 
 .redesign-components__form.form {
     background: rgba(41, 95, 175, 0.8);
+}
+
+.redesign-components__documents {
+    width: 100%;
+    margin-bottom: 32px;
 }
 

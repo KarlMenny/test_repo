@@ -171,7 +171,22 @@
         });
     }
 
+    function initPrevDocsToggle() {
+        $(document).on("click", ".prev-docs__toggle", function () {
+            const $toggle = $(this);
+            const $block = $toggle.closest(".prev-docs");
+            const $list = $block.find(".prev-docs__list");
+            const $icon = $block.find(".prev-docs__toggle-icon");
+            const $parentCard = $block.closest(".documents-card");
+
+            $list.slideToggle(200);
+            $icon.toggleClass("prev-docs__toggle-icon_rotated");
+            $parentCard.toggleClass("documents-card_opened-prev");
+        });
+    }
+
     $(document).ready(function () {
         initOwnSelectElement();
+        initPrevDocsToggle();
     });
 })(jQuery);
