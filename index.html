@@ -53,6 +53,18 @@
                         <button class="btn btn_h_36 btn-primary">Зупинити</button>
                         <button class="btn btn_h_36 btn-info">Інформація</button>
                         <button class="btn btn_h_36 btn-success">Зберегти</button>
+                        <a href="#" role="button" class="btn btn-outline-primary btn_h_36">
+                            <svg class="btn__img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 10C9.79086 10 8 8.20914 8 6C8 3.79086 9.79086 2 12 2C14.2091 2 16 3.79086 16 6C16 8.20914 14.2091 10 12 10Z"
+                                    fill="#295FAF" />
+                                <path
+                                    d="M4 17.5C4 19.985 4 22 12 22C20 22 20 19.985 20 17.5C20 15.015 16.418 13 12 13C7.582 13 4 15.015 4 17.5Z"
+                                    fill="#295FAF" />
+                            </svg>
+                            <span>Увійти в кабінет</span>
+                        </a>
                     </div>
                     <div class="custom-block__title">Кнопки</div>
                     <div class="redesign-components__btns">
@@ -69,18 +81,6 @@
                         <button class="btn btn-info">Інформація</button>
                         <button class="btn btn-success">Зберегти</button>
                         <button class="btn btn_color_white">Реєстрація</button>
-                        <a href="#" role="button" class="btn btn-outline-primary btn_h_36">
-                            <svg class="btn__img" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 10C9.79086 10 8 8.20914 8 6C8 3.79086 9.79086 2 12 2C14.2091 2 16 3.79086 16 6C16 8.20914 14.2091 10 12 10Z"
-                                    fill="#295FAF" />
-                                <path
-                                    d="M4 17.5C4 19.985 4 22 12 22C20 22 20 19.985 20 17.5C20 15.015 16.418 13 12 13C7.582 13 4 15.015 4 17.5Z"
-                                    fill="#295FAF" />
-                            </svg>
-                            <span>Увійти в кабінет</span>
-                        </a>
                     </div>
                     <div class="custom-block__title">Чіпи</div>
                     <div class="cheked-items">
@@ -147,8 +147,8 @@
                             <span class="carte__text">Будматеріали</span>
                         </a>
                     </div>
-                    <div class="custom-block__title">Селект (own-select)</div>
-                    <div class="redesign-components__own-select">
+                    <div class="custom-block__title">Форми</div>
+                    <div class="redesign-components__forms">
                         <div class="own-select">
                             <div class="own-select__selected" data-selected="4" tabindex="0">з 08:00 до 10:00</div>
                             <div class="own-select__items">
@@ -159,6 +159,92 @@
                                 <div value="4">з 08:00 до 10:00</div>
                                 <div value="5">з 10:00 до 12:00</div>
                                 <div value="6">з 12:00 до 14:00</div>
+                            </div>
+                        </div>
+                        <div class="row-igroup-w-btn row-igroup-w-btn_simple">
+                            <input class="row-igroup-w-btn__field form-control" type="text" aria-label="search field"
+                                placeholder="Назва товару, код товару, ЄДРПОУ ...">
+                            <button class="btn btn-primary row-igroup-w-btn__append-btn" type="button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 21L7.34 16.66M5 11C5 15.4183 8.58172 19 13 19C17.4183 19 21 15.4183 21 11C21 6.58172 17.4183 3 13 3C8.58172 3 5 6.58172 5 11Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <span>Пошук</span>
+                            </button>
+                        </div>
+                        <div class="form-in-group">
+                            <label for="eMember_code" class="form-label">
+                                <span>ЄДРПОУ</span>
+                            </label>
+                            <input type="text" class="form-control" id="eMember_code" name="eMember_code"
+                                maxlength="20" readonly="readonly">
+                        </div>
+                        <div class="form-in-group">
+                            <label for="eMember_short_name" class="form-label required">
+                                <span>Коротка назва</span>
+                            </label>
+                            <input type="text" class="form-control" id="eMember_short_name" name="eMember_short_name"
+                                maxlength="1000" placeholder="ТОВ “Тест1298“">
+                        </div>
+                        <div class="form-in-group">
+                            <label class="form-label">
+                                <span>Примітки</span>
+                            </label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                        <div class="form redesign-components__form">
+                            <div class="form__content">
+                                <div class="form__title">Реєстрація на майданчику</div>
+                                <div class="form-group">
+                                    <label for="eMemberCard_name" class="form__label required">
+                                        <span>Офіційна коротка назва</span>
+                                    </label>
+                                    <input type="text" class="form-control form__field" id="eMemberCard_name"
+                                        name="eMemberCard_name" placeholder="Офіційна коротка назва">
+                                </div>
+                                <div class="form-group">
+                                    <label for="eMemberCard_telephone" class="form__label required">
+                                        <span>Телефон</span>
+                                    </label>
+                                    <input type="text" class="form-control form__field" id="eMemberCard_telephone"
+                                        name="eMemberCard_telephone" placeholder="+38(000)000-00-00">
+                                </div>
+                                <div class="form-group">
+                                    <label for="eMemberCard_login" class="form__label required">
+                                        <span>Електронна пошта</span>
+                                    </label>
+                                    <input type="text" class="form-control form__field" id="eMemberCard_login"
+                                        name="eMemberCard_login" autocomplete="off" placeholder="example@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="eMemberCard_password" class="form__label required">
+                                        <span>Пароль</span>
+                                    </label>
+                                    <div class="form__password form__password_type_password">
+                                        <svg class="form__password-view" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2.06202 12.348C1.97868 12.1235 1.97868 11.8765 2.06202 11.652C2.87372 9.68385 4.25153 8.00103 6.02079 6.81689C7.79004 5.63275 9.87106 5.00061 12 5.00061C14.129 5.00061 16.21 5.63275 17.9792 6.81689C19.7485 8.00103 21.1263 9.68385 21.938 11.652C22.0214 11.8765 22.0214 12.1235 21.938 12.348C21.1263 14.3161 19.7485 15.999 17.9792 17.1831C16.21 18.3672 14.129 18.9994 12 18.9994C9.87106 18.9994 7.79004 18.3672 6.02079 17.1831C4.25153 15.999 2.87372 14.3161 2.06202 12.348Z"
+                                                stroke="#295FAF" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M12 15C13.6569 15 15 13.6568 15 12C15 10.3431 13.6569 8.99999 12 8.99999C10.3432 8.99999 9.00002 10.3431 9.00002 12C9.00002 13.6568 10.3432 15 12 15Z"
+                                                stroke="#295FAF" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <input type="password" class="form-control form__field" id="eMemberCard_password"
+                                            name="eMemberCard_password" autocomplete="off" maxlength="20"
+                                            placeholder="8-20 символів">
+                                    </div>
+                                </div>
+                                <div class="form__info">
+                                    <div>На Вашу адресу буде надіслано електронного листа з реєстраційною інформацією.
+                                    </div>
+                                    <div>Також лист містить посилання для підтвердження електронної адреси.</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -272,8 +358,7 @@
                             </div>
                         </div>
                         <div class="own-igroup">
-                            <div
-                                class="own-igroup__content own-igroup__el-period own-igroup__el-period_without-select">
+                            <div class="own-igroup__content own-igroup__el-period own-igroup__el-period_without-select">
                                 <div class="own-igroup__prepend">
                                     <span class="own-igroup__text">Дата подання пропозиції:</span>
                                 </div>
@@ -325,6 +410,59 @@
                                 </svg>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="advantages-info custom-block custom-block_theme_blue container-1770">
+                    <div class="advantages-info__item">
+                        <div class="advantages-info__item-title">Чому майданчик «Української універсальної біржі» системи
+                            Прозорро.Закупівлі найкращий?</div>
+                        <div class="custom-block__text advantages-info__item-text">Платформа tender.uub.com.ua постійно
+                            вдосконалюється. Ми прагнемо завжди бути кращими. Задовольнити найменші побажання клієнтів
+                            нам допомагає цілий ряд конкурентних переваг, якими володіє електронний майданчик
+                            «Української універсальної біржі».</div>
+                    </div>
+                    <div class="advantages-info__item">
+                        <div class="advantages-info__item-title">Зрозумілий інтерфейс</div>
+                        <div class="custom-block__text advantages-info__item-text">Прозора процедура реєстрації, яку
+                            можна пройти буквально в два кліки. А всі необхідні функції знаходяться поряд, буквально
+                            «під рукою». Ми зробили все для того, щоб вам було зручно працювати з нашим сайтом.
+                            Навчитися правильно користуватися майданчиком ви також зможете завдяки доступним
+                            відео-інструкціям на YouTube – каналі УУБ.</div>
+                    </div>
+                    <div class="advantages-info__item">
+                        <div class="advantages-info__item-title">Доступ до актуальної бази всіх публічних закупівель
+                        </div>
+                        <div class="custom-block__text advantages-info__item-text">На майданчику «Української
+                            універсальної біржі» постачальники отримують доступ до повної Бази публічних закупівель,
+                            які на даний момент опубліковані в системі Прозорро. Завдяки зручній системі «розумних»
+                            фільтрів кожен постачальник швидко відшукає тендери, які на 100% відповідатимуть його
+                            конкретним вимогам. Ми регулярно інформуємо своїх клієнтів про появу цікавих пропозицій.
+                        </div>
+                    </div>
+                    <div class="advantages-info__item">
+                        <div class="advantages-info__item-title">Стабільність і надійність</div>
+                        <div class="custom-block__text advantages-info__item-text">В нашій компанії працюють найкращі
+                            фахівці своєї справи, які мають багаторічний досвід проведення біржових операцій. Знання,
+                            професіоналізм та індивідуальний підхід до кожного клієнта – гарантія вашого успіху!
+                        </div>
+                    </div>
+                    <div class="advantages-info__item">
+                        <div class="advantages-info__item-title">Якісна технічна підтримка</div>
+                        <div class="custom-block__text advantages-info__item-text">Сучасне програмне забезпечення разом
+                            з максимально детальними консультаціями персонального менеджера – невід’ємні складові
+                            співпраці з УУБ. Ми зібрали прекрасних спеціалістів, які з легкістю вирішать усі питання,
+                            що стосуються публічних торгів. Наші консультанти піклуються про кожного клієнта, а
+                            досконале знання всіх нюансів закупівельного процесу допоможе уникнути неточностей і
+                            непорозумінь.</div>
+                    </div>
+                    <div class="advantages-info__item">
+                        <div class="advantages-info__item-title">Актуальна інформація</div>
+                        <div class="custom-block__text advantages-info__item-text">Інформаційна база майданчика постійно
+                            оновлюється. Тут ви одразу знайдете найновіші дані про зміни в українському законодавстві.
+                            Майданчик «Української універсальної біржі» регулярно проводить навчальні семінари, де
+                            професійні коучі і бізнес-тренери розкривають усі нюанси роботи з системою Prozorro.
+                            Підписуйтеся на нашу Email – розсилку та отримайте можливість взяти участь у прибуткових
+                            закупівлях разом з найкращими фахівцями tender.uub.com.ua!</div>
                     </div>
                 </div>
             </div>

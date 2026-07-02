@@ -33,10 +33,22 @@
     margin-bottom: 32px;
 }
 
-.redesign-components__own-select {
+.redesign-components__forms {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
     margin-bottom: 32px;
+}
+
+.redesign-components__forms .row-igroup-w-btn,
+.redesign-components__forms .form-in-group {
+    max-width: 600px;
+    width: 100%;
+}
+
+.redesign-components__forms .form {
+    width: 100%;
 }
 
 .redesign-components__filters {
@@ -44,5 +56,9 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
+}
+
+.redesign-components__form.form {
+    background: rgba(41, 95, 175, 0.8);
 }
 
