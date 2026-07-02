@@ -1275,6 +1275,10 @@ a.carte {
     background-color: var(--blue-light-color-5);
 }
 
+.action_view:hover {
+    background-color: var(--blue-light-color);
+}
+
 .action_download {
     background-color: var(--blue-light-color-5);
 }
